@@ -1,0 +1,38 @@
+{
+  "source_image": "Image1_withnoise.jpg",
+  "image_size": [512, 512],
+  "description": "两条电力线（细暗线）的人工核定真值。参数采用 Hough 参数化 rho = x*cos(theta) + y*sin(theta)。",
+  "how_obtained": [
+    "1) 用大尺度黑帽变换(black-hat)得到暗细线响应；",
+    "2) 在 (theta, rho) 全参数空间扫描，统计每条候选直线上的平均暗对比度，取前若干峰；",
+    "3) 对候选直线做法向灰度剖面检验：真正的电力线表现为宽 2~3px、深度 30~50 灰阶的窄暗谷；",
+    "4) 对通过检验的两条线做局部参数优化（最大化线上平均暗对比度）；",
+    "5) 结果叠加到原图人工复核（results/figures/fig02_gt_annotation.png）。"
+  ],
+  "tolerance_px": 2.0,
+  "roi_halfwidth_px": 6.0,
+  "lines": [
+    {
+      "id": "L1",
+      "rho": 206.0,
+      "theta_deg": 76.7,
+      "slope_angle_deg": -13.3,
+      "x_start": 0,
+      "x_end": 511,
+      "mean_contrast": 32.9,
+      "profile_fwhm_px": 3,
+      "note": "全宽可见，最深暗谷 90 灰阶；上方的电力线"
+    },
+    {
+      "id": "L2",
+      "rho": 420.75,
+      "theta_deg": 81.35,
+      "slope_angle_deg": -8.65,
+      "x_start": 0,
+      "x_end": 511,
+      "mean_contrast": 31.8,
+      "profile_fwhm_px": 2,
+      "note": "全宽可见，暗谷 40~86 灰阶；下方的电力线，与 L1 不平行"
+    }
+  ]
+}
