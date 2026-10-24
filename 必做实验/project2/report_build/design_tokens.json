@@ -1,0 +1,51 @@
+{
+  "genre": "academic-paper",
+  "theme_name": "academic-paper-override",
+  "theme_file": "skills/design-token/tokens/themes/academic-paper.json",
+  "override_reason": "按《实验指导书》强制格式：一级标题四号黑体、二级标题小四黑体、正文小四宋体、1.2 倍行距、公式居中编号靠右、图表标题居中",
+  "tokens": {
+    "typography": {
+      "fontFamily": {
+        "heading": {"$type": "fontFamily", "$value": "黑体, SimHei"},
+        "body": {"$type": "fontFamily", "$value": "宋体, SimSun"}
+      },
+      "fontSize": {
+        "h1": {"$type": "dimension", "$value": "14pt", "$description": "一级标题 四号黑体"},
+        "h2": {"$type": "dimension", "$value": "12pt", "$description": "二级标题 小四黑体"},
+        "h3": {"$type": "dimension", "$value": "12pt"},
+        "h4": {"$type": "dimension", "$value": "12pt"},
+        "body": {"$type": "dimension", "$value": "12pt", "$description": "正文 小四宋体"},
+        "caption": {"$type": "dimension", "$value": "10.5pt"}
+      },
+      "lineHeight": {
+        "body": {"$type": "number", "$value": 1.2, "$description": "1.2 倍行距"},
+        "heading": {"$type": "number", "$value": 1.2}
+      }
+    },
+    "color": {
+      "primary": {"$type": "color", "$value": "#000000"},
+      "text": {"$type": "color", "$value": "#000000"},
+      "background": {"$type": "color", "$value": "#ffffff"}
+    },
+    "layout": {
+      "contentWidth": {"$type": "dimension", "$value": "16.0cm"},
+      "pageSize": {"$type": "string", "$value": "A4"}
+    },
+    "numbering": {
+      "equationStyle": {"$type": "string", "$value": "centered-with-right-number"},
+      "figureCaption": {"$type": "string", "$value": "centered-below"}
+    }
+  },
+  "css_variables": {
+    "--typography-fontFamily-heading": "黑体, SimHei, sans-serif",
+    "--typography-fontFamily-body": "宋体, SimSun, serif",
+    "--typography-fontSize-h1": "14pt",
+    "--typography-fontSize-h2": "12pt",
+    "--typography-fontSize-h3": "12pt",
+    "--typography-fontSize-h4": "12pt",
+    "--typography-fontSize-body": "12pt",
+    "--typography-fontSize-caption": "10.5pt",
+    "--typography-lineHeight-body": "1.2",
+    "--typography-lineHeight-heading": "1.2"
+  }
+}
