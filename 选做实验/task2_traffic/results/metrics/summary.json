@@ -1,0 +1,111 @@
+{
+  "video": "/home/nuaawzh/PR&CV Exp/选做实验/Task2/video1.mp4",
+  "fps": 25.0,
+  "n_frames": 328,
+  "duration_s": 13.12,
+  "note_frames": "元数据标称 378 帧(15.12s)，但实际仅 328 帧可解码(13.12s)，文件尾部有损坏/截断，全部统计基于可解码的 328 帧。",
+  "roi_rows": [
+    620,
+    1078
+  ],
+  "count_line_row": 900,
+  "calibration": {
+    "lane_width_m": 3.75,
+    "hfov_deg": 32.0,
+    "focal_px": 3347.9,
+    "camera_height_m": 10.52,
+    "pitch_deg": 13.13,
+    "yaw_deg": 4.44,
+    "vanishing_point": [
+      1219.7,
+      -240.7
+    ],
+    "lane_px_at_v780": 354.3,
+    "px_per_m_lateral@v780": 94.48,
+    "px_per_m_longitudinal@v780": 28.05
+  },
+  "n_tracks_confirmed": 18,
+  "n_vehicles_counted": 11,
+  "n_counted_short_track": 2,
+  "n_counted_with_speed": 9,
+  "n_counted_speed_reliable": 9,
+  "count_events": [
+    {
+      "track_id": 5,
+      "t_cross_s": 3.093,
+      "frame_cross": 77,
+      "speed_kmh_at_cross": 35.3
+    },
+    {
+      "track_id": 7,
+      "t_cross_s": 5.457,
+      "frame_cross": 136,
+      "speed_kmh_at_cross": 38.37
+    },
+    {
+      "track_id": 10,
+      "t_cross_s": 6.632,
+      "frame_cross": 166,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 12,
+      "t_cross_s": 8.103,
+      "frame_cross": 203,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 13,
+      "t_cross_s": 8.331,
+      "frame_cross": 208,
+      "speed_kmh_at_cross": 48.95
+    },
+    {
+      "track_id": 15,
+      "t_cross_s": 9.784,
+      "frame_cross": 245,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 16,
+      "t_cross_s": 10.999,
+      "frame_cross": 275,
+      "speed_kmh_at_cross": 12.91
+    },
+    {
+      "track_id": 18,
+      "t_cross_s": 11.073,
+      "frame_cross": 277,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 19,
+      "t_cross_s": 11.828,
+      "frame_cross": 296,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 20,
+      "t_cross_s": 11.917,
+      "frame_cross": 298,
+      "speed_kmh_at_cross": null
+    },
+    {
+      "track_id": 21,
+      "t_cross_s": 11.947,
+      "frame_cross": 299,
+      "speed_kmh_at_cross": null
+    }
+  ],
+  "speed_stats_kmh": {
+    "basis": "仅统计越线且有效样本>=12 的车辆（R² 作为质量指标另列）",
+    "n": 9,
+    "mean": 44.27,
+    "median": 44.59,
+    "std": 14.08,
+    "min": 22.65,
+    "max": 65.13
+  },
+  "processing_seconds": 9.6,
+  "processing_fps": 34.0
+}
